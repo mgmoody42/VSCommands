@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>2901cef8-4f81-42b2-8c43-ec450401dc03</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SquaredInfinity.VSCommands.VscPackage</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Bootstrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XamlResources.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Resources\solutionbadge-breakmode.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\solutionbadge-runmode.png" />
+    <None Include="$(MSBuildThisFileDirectory)Content\vsc11.eula.txt" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\logo.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\solutionbadge-bug.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\solutionbadge-feature.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\solutionbadge-solution.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\solutionbadge-team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Resources\!read.me" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)XamlResources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>
